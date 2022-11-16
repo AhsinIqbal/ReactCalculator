@@ -1,0 +1,59 @@
+.calculatorGrid {
+  max-width: 650px;
+  height: calc(100vh - 26rem);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.calculatorGrid .calculatorContentWrapper {
+  width: 100%;
+}
+.calculatorGrid .CalculatorButtons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.25em;
+  padding: 0.25em;
+  flex: 1;
+}
+.calculatorGrid .btn {
+  font-size: 2em;
+}
+.calculatorGrid .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.calculatorGrid .historyTab {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  width: 250px;
+  gap: 0px;
+  font-size: 16px;
+  border: 1px solid #e5e5e5;
+}
+.calculatorGrid .historyTab p {
+  margin: 0;
+  padding: 0;
+}
+.calculatorGrid .historyTab ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  overflow-y: auto;
+  padding: 8px 16px;
+}
+.calculatorGrid .historyTab ul li {
+  list-style: none;
+  width: 100%;
+  border-bottom: 0.5px solid #e5e5e5;
+  text-align: center;
+}/*# sourceMappingURL=calculatorButtonUI.css.map */
