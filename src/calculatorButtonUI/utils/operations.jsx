@@ -31,6 +31,10 @@ const Operations = (props) =>{
             if (String(prevState) === "" && (operation === '/' || operation === '*')){
               return "";
             }
+            // iterates the array in reverse order and returns the value of the first element that satisfies the provided testing function
+            if(String(prevState).length>1 && String(prevState)[(prevState.length)-1]===operation && String(prevState).indexOf(operation)!==0){
+              return prevState;
+            }
               return prevState + e.target.getAttribute("operatorvalue") ;
             })
             }}
