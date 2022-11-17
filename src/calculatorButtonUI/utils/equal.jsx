@@ -12,9 +12,16 @@ const EqualBtn = (props) =>{
             (e)=>{
                 var newVal = props.panelExpression.split(/([\+\-\*\/])/).map(a => parseFloat(a) || a).join('');
                 props.historyExpression.push(traceFigures);
+                //split
+                //get last value of expression
+                ///check if the [+,/,-,*]
+                //delete
+                //error show 
                 let result=eval(newVal);
                 props.setPanelExpression(prevState => {
                 prevState=result
+                console.log(result)
+               
                 return result;
                 })
                 }

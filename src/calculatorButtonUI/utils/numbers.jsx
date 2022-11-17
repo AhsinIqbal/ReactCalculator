@@ -23,6 +23,9 @@ const Numbers = (props) =>{
         numbers.map(({ letter, number }) => (
         <button onClick={(e)=> {
           props.setPanelExpression(prevState => {
+          if (String(prevState).length === 0 && (String(prevState) === '*' || String(prevState) === '/')) {
+            return '';
+          } 
           return prevState + e.target.value;
           })
         }}
